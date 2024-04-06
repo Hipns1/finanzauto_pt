@@ -1,0 +1,19 @@
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px 12px 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+
+    .img {
+        border-radius: 50%;
+        width: 100px;
+        height: auto;
+        align-self: center;
+    }
+}
