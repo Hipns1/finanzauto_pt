@@ -28,6 +28,7 @@ const ModalUserForm: React.FC<ModalUserProps> = ({
 
     useEffect(() => {
         setFormData({ ...initialFormData, ...userEdit })
+        /* eslint-disable */
     }, [userEdit])
 
     const isValidEmail = (email: string) => /\S+@\S+\.\S+/.test(email)
