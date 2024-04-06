@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 100vh;
+    padding: 16px 0;
+
+    .add_users {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .logo {
+        height: 30px;
+        width: auto;
+        align-self: flex-start;
+    }
+}
