@@ -34,8 +34,11 @@ const App = () => {
             setIsLoading(true)
             setRefreshUsers((prev) => prev + 1)
             setIsOpenModal(false)
-            window.location.reload()
+
             toastMessage('Usuario añadido exitosamente', 'success')
+            setTimeout(() => {
+                window.location.reload()
+            }, 1500)
         } catch (error) {
             console.log(error)
             toastMessage('Este correo ya existe, intenta con uno nuevo', 'error')
@@ -65,8 +68,10 @@ const App = () => {
             setIsLoading(true)
             setRefreshUsers((prev) => prev + 1)
             setIsOpenModal(false)
-            window.location.reload()
             toastMessage('Usuario editado exitosamente', 'success')
+            setTimeout(() => {
+                window.location.reload()
+            }, 1500)
         } catch (error) {
             console.log(error)
             toastMessage('Error al editar el usuario', 'error')
